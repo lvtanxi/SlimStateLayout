@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/state_layout">
+
+    <ImageView
+        style="@style/state_image"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_state_layout_network" />
+
+    <TextView
+        style="@style/state_text"
+        android:text="@string/network_error"/>
+
+    <TextView
+        style="@style/state_retry"/>
+</LinearLayout>
