@@ -97,6 +97,8 @@ public class StateLayout extends FrameLayout {
 
         netErrorView = inflater.inflate(R.layout.view_network_error, this, false);
 
+        addView(netErrorView);
+
         emptyView = inflater.inflate(R.layout.view_empty, this, false);
         emptyTextView = (TextView) emptyView.findViewById(R.id.state_text_view);
         emptyImageView = (ImageView) emptyView.findViewById(R.id.state_image_view);
