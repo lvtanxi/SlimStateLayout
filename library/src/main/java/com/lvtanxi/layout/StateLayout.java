@@ -11,8 +11,6 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 
@@ -91,17 +89,14 @@ public class StateLayout extends FrameLayout {
             errorImageView.setImageResource(R.mipmap.ic_state_layout_error);
         }
         addView(errorView);
-        /******************************************************************************************/
-
-        /******************************************************************************************/
 
         netErrorView = inflater.inflate(R.layout.view_network_error, this, false);
 
         addView(netErrorView);
 
         emptyView = inflater.inflate(R.layout.view_empty, this, false);
-        emptyTextView = (TextView) emptyView.findViewById(R.id.state_text_view);
-        emptyImageView = (ImageView) emptyView.findViewById(R.id.state_image_view);
+        emptyTextView = emptyView.findViewById(R.id.state_text_view);
+        emptyImageView = emptyView.findViewById(R.id.state_image_view);
         if (emptyDrawable != null) {
             emptyImageView.setImageDrawable(emptyDrawable);
         } else {
